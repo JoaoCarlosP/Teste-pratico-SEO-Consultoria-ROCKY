@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Loja de tênis, chuteiras, roupas esportivas, aparelhos de academia, artigos esportivos e muito mais! Compre agora no JC Sports, loja com os menores preços para comprar online em até 12x, sem sair de casa.">
+    <link rel="stylesheet" href="styles/header-footer.css">
+    <link rel="stylesheet" href="styles/duvidas.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/media.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/2330872482.js" crossorigin="anonymous"></script>
+    <!--Script criado a partir do fonts awesome para inserir um icon dentro do input-->
+    <title>JC Sports - Atendimento</title>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" target="_parent" rel="prev">JC SPORTS</a></h1>
+
+        <!--Input para o usuário digitar o que está pesquisando + um label com o icone que será inserido no input-->
+        <div class="container-input-search">
+            <label id="icon-search" for="input-search"><i class="fa-solid fa-magnifying-glass"></i></label>
+            <input id="input-search" type="text" placeholder="O que você está procurando?">
+        </div>
+        
+        <!--Container usado para levar a página de cadastro do usuário-->
+        <a id="inscrever-container" href="cadastro.html" target="_blank" rel="next">
+            <img src="images/logo-user.png" alt="Logo usuário" width="25px" height="25px">
+            <label>Criar conta</label>
+        </a>
+    </header>
+
+    <!------------------------- Container com acesso rápido ---------------------->
+    <section id="container-acesso-rapido">
+        <h2>AQUI VOCÊ TEM ACESSO RÁPIDO PARA</h2>
+
+        <!---------------Opção 1 de acesso rápido---------------->
+        <div class="acesso-rapido">
+            <div class="container-tipo-acesso">
+
+                <!--ícone + Nome da opção-->
+                <div class="container-icon">
+                    <img src="images/icon-compra.png" alt="icon-sacola" class="icon"><br>
+                    <label><strong>Meus Pedidos</strong></label>
+                </div>
+
+                <!--Parte de itens procurados na opção 1-->
+                <div class="container-itens">
+                    <ul>
+                        <li>Acompanhar entrega</li>
+                        <li>Imprimir boleto</li>
+                        <li>Cancelar pedido ou entrega</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-----------Opção 2 de acesso rápido----------------->
+            <div class="container-tipo-acesso">
+
+                <!--ícone + Nome da opção-->
+                <div class="container-icon">
+                    <img src="images/icon-ciclo.png" alt="icon-troca" class="icon"><br>
+                    <label><strong>Trocas e Devoluções</strong></label>
+                </div>
+
+                <!--Parte de itens procurados na opção 2-->
+                <div class="container-itens">
+                    <ul>
+                        <li>Acompanhar troca</li>
+                        <li>Acompanhar devolução</li>
+                        <li>Autorização de postagem</li>
+                        <li>Solicitar troca ou devolução</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!----------Opção 3 de acesso rápido----------->
+            <div class="container-tipo-acesso">
+
+                <!--ícone + Nome da opção-->
+                <div class="container-icon">
+                    <img src="images/icon-saco.png" alt="icon-reembolso" class="icon"><br>
+                    <label><strong>Vale Reembolso</strong></label>
+                </div>
+
+                <!--Parte de itens procurados na opção 3-->
+                <div class="container-itens">
+                    <ul>
+                        <li>Histórico de consumo</li>
+                        <li>Saldo disponível</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-----------Opção 4 de acesso rápido------------>
+            <div class="container-tipo-acesso">
+
+                <!--ícone + Nome da opção-->
+                <div class="container-icon">
+                    <img src="images/icon-user.png" alt="icon-sacola" class="icon"><br>
+                    <label><strong>Meus Dados</strong></label>
+                </div>
+
+                <!--Parte de itens procurados na opção 2-->
+                <div class="container-itens">
+                    <ul>
+                        <li>Informações pessoais</li>
+                        <li>Senha e E-mail</li>
+                        <li>Meus telefones</li>
+                        <li>Endereços</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <main>
+        <!--------------- Container com duvidas frequentes ----------------->
+        <article id="container-duvidas">
+
+            <!--Opção do usuário digitar sua dúvida via um input text-->
+            <section id="duvida-digitada">
+                <h2>OU DIGITE SUA PERGUNTA NO CAMPO ABAIXO</h2>
+                <input type="text" placeholder="Procure por um termo específico. Ex: Como acompanhar meu pedido">
+            </section>
+
+            <!--Parte de duvidas mais frequentes-->
+            <section id="duvidas-frequentes">
+                <h3>PERGUNTAS FREQUENTES</h3>
+                <Label>Após solicitar a troca do produto, em quanto tempo o pedido de troca é enviado?</Label>
+                <Label>Após solicitar a troca, em quanto tempo o vale-compra será liberado?</Label>
+                <Label>Como trocar um produto?</Label>
+                <Label>Como enviar o produto para troca ou devolução?</Label>
+                <Label>Como embalar o produto para troca ou devolução?</Label>
+                <Label>Em quanto tempo é possível trocar o produto?</Label>
+                <Label>Posso alterar o endereço de entrega?</Label>
+                <Label>Ainda não recebi meu pedido, o que fazer?</Label>
+                <Label>Como acompanhar a entrega do meu pedido?</Label>
+            </section>
+        </article>
+    </main>
+    
+    <footer>
+        <h3>ENTRE EM CONTATO:</h3>
+
+        <!--------- Container com meus contatos -------->
+        <div class="container-contato">
+
+            <!--Telefone-->
+            <div class="contato">
+                <label><strong>TELEFONE:</strong></label>
+                <img src="images/icones/icon-telefone.png" alt="icone-telefone">
+                <a href="#">(15)99162-1124</a>
+            </div>
+
+            <!--E-mail-->
+            <div class="contato">
+                <label><strong>E-MAIL:</strong></label>
+                <img src="images/icones/icon-envelope.png" alt="icone-envelope">
+                <a href="#">joao.tecmeca@gmail.com</a>
+            </div>
+
+            <!--Linkedin-->
+            <div class="contato">
+                <label><strong>LINKEDIN:</strong></label>
+                <img src="images/icones/icon-linkedin.png" alt="icone-linkedin">
+                <a href="https://www.linkedin.com/in/jo%C3%A3o-carlos-pereira-7450071b8/" target="_blank">Linkedin</a>
+            </div>
+
+            <!--Github-->
+            <div class="contato">
+                <label><strong>GITHUB:</strong></label>
+                <img src="images/icones/icon-github.png" alt="icone-github">
+                <a href="https://github.com/JoaoCarlosP" target="_blank">JoaoCarlosP</a>
+            </div>
+        </div>
+        <p id="mensagem">Site de compras desenvolvido por: <a href="https://www.linkedin.com/in/jo%C3%A3o-carlos-pereira-7450071b8/">João Carlos Pereira Geraldo</a></p>
+    </footer>
+</body>

@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'sports';
+    src: url('../fonts/EA\ Sports\ Covers\ SC\ 1.5.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sports-outline';
+    src: url('../fonts/EA\ Sports\ Covers\ SC\ 1.5\ Outline.ttf');
+    font-weight: normal;
+    font-style: normal;
+}

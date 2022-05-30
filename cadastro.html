@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Loja de tênis, chuteiras, roupas esportivas, aparelhos de academia, artigos esportivos e muito mais! Compre agora no JC Sports, loja com os menores preços para comprar online em até 12x, sem sair de casa.">
+    <link rel="stylesheet" href="styles/header-footer.css">
+    <link rel="stylesheet" href="styles/cadastro.css">
+    <link rel="stylesheet" href="styles/media.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/2330872482.js" crossorigin="anonymous"></script>
+    <!--Script criado a partir do fonts awesome para inserir um icon dentro do input-->
+    <title>JC Sports Loja de esportes - Nike, Adidas, Olympicus, Penalty e mais!</title>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" target="_parent" rel="prev">JC SPORTS</a></h1>
+
+        <!--Input para o usuário digitar o que está pesquisando + um label com o icone que será inserido no input-->
+        <div class="container-input-search">
+            <label id="icon-search" for="input-search"><i class="fa-solid fa-magnifying-glass"></i></label>
+            <input id="input-search" type="text" placeholder="O que você está procurando?">
+        </div>
+        
+        <!--Container usado para levar a página de cadastro do usuário-->
+        <a id="inscrever-container" href="cadastro.html" target="_blank" rel="next">
+            <img src="images/logo-user.png" alt="Logo usuário" width="25px" height="25px">
+            <label>Criar conta</label>
+        </a>
+    </header>
+
+    <main>
+        <div class="campo cabecalho">
+            <h2 id="titulo">Cadastro</h2>
+            <p id="subtitulo">Complete com as suas informações</p>
+        </div>
+        <form>
+            <!-- ----------- NOME E EMAIL -------------->
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+        
+                </div>
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset>
+            <div class="campo">
+                <label for="email"><strong>E-mail</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <!-- ----------- GÊNERO -------------->
+            <div class="campo container-sexo">
+                <label><strong>Qual é seu sexo?</strong></label>
+                <label class="sexo">
+                    <input type="radio" name="sexo" value="feminino">Feminino
+                </label>
+                <label class="sexo">
+                    <input type="radio" name="sexo" value="masculino">Masculino
+                </label>
+                <label class="sexo">
+                    <input type="radio" name="sexo" value="outros">Outros
+                </label>
+            </div>
+
+            <!-- ----------- REGIÃO -------------->
+            <div class="campo container-regiao">
+                <label for="regiao"><strong>Qual é a sua região?</strong></label>
+
+                <select name="regiao" id="regiao">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Norte</option>
+                    <option>Nordeste</option>
+                    <option>Centro-Oeste</option>
+                    <option>Sudeste</option>
+                    <option>Sul</option>
+                </select>
+            </div>
+
+            <!-- ----------- CAMPOS DE INTERESSE -------------->
+            <fieldset class="grupo container-interesse">
+                <div class="campo interesse">
+                    <label><strong>Selecione seus maiores interesses</strong></label><br>
+                    <input type="checkbox" id="interesse1" name="interesse1" value="ginastica">
+                    <label for="interesse1">Ginástica</label>
+                    <input type="checkbox" id="interesse2" name="interesse2" value="corrida">
+                    <label for="interesse2">Corrida</label>
+                    <input type="checkbox" id="interesse3" name="interesse3" value="danca">
+                    <label for="interesse3">Dança</label>
+                    <input type="checkbox" id="interesse4" name="interesse4" value="boxe">
+                    <label for="interesse4">Boxe</label>
+                    <input type="checkbox" id="interesse5" name="interesse5" value="muaythai">
+                    <label for="interesse5">Muay thai</label>
+                    <input type="checkbox" id="interesse6" name="interesse6" value="judo">
+                    <label for="interesse6">Judô</label>
+                    <input type="checkbox" id="interesse7" name="interesse7" value="karate">
+                    <label for="interesse7">Karatê</label>
+                    <input type="checkbox" id="interesse8" name="interesse8" value="futebol">
+                    <label for="interesse8">Futebol</label>
+                    <input type="checkbox" id="interesse9" name="interesse9" value="handball">
+                    <label for="interesse9">HandBall</label>
+                    <input type="checkbox" id="interesse10" name="interesse10" value="volei">
+                    <label for="interesse10">Vôlei</label>
+                    <input type="checkbox" id="interesse11" name="interesse11" value="basquete">
+                    <label for="interesse11">Basquete</label>
+                    <input type="checkbox" id="interesse12" name="interesse12" value="pingpong">
+                    <label for="interesse12">Ping-Pong</label>
+                    <input type="checkbox" id="interesse13" name="interesse13" value="tenis">
+                    <label for="interesse13">Tênis</label>
+                    <input type="checkbox" id="interesse14" name="interesse14" value="natacao">
+                    <label for="interesse14">Natação</label>
+                    <input type="checkbox" id="interesse15" name="interesse15" value="outro">
+                    <label for="outro">Outros esportes</label>
+                </div>
+            </fieldset>
+
+            <!--Botão para enviar o formulário-->
+            <button class="btn-submit" type="submit">Concluído</button>
+        </form>
+    </main>
+
+    <footer>
+        <h3>ENTRE EM CONTATO:</h3>
+
+        <!--------- Container com meus contatos -------->
+        <div class="container-contato">
+
+            <!--Telefone-->
+            <div class="contato">
+                <label><strong>TELEFONE:</strong></label>
+                <img src="images/icones/icon-telefone.png" alt="icone-telefone">
+                <a href="#">(15)99162-1124</a>
+            </div>
+
+            <!--E-mail-->
+            <div class="contato">
+                <label><strong>E-MAIL:</strong></label>
+                <img src="images/icones/icon-envelope.png" alt="icone-envelope">
+                <a href="#">joao.tecmeca@gmail.com</a>
+            </div>
+
+            <!--Linkedin-->
+            <div class="contato">
+                <label><strong>LINKEDIN:</strong></label>
+                <img src="images/icones/icon-linkedin.png" alt="icone-linkedin">
+                <a href="https://www.linkedin.com/in/jo%C3%A3o-carlos-pereira-7450071b8/" target="_blank">Linkedin</a>
+            </div>
+
+            <!--Github-->
+            <div class="contato">
+                <label><strong>GITHUB:</strong></label>
+                <img src="images/icones/icon-github.png" alt="icone-github">
+                <a href="https://github.com/JoaoCarlosP" target="_blank">JoaoCarlosP</a>
+            </div>
+        </div>
+        <p id="mensagem">Site de compras desenvolvido por: <a href="https://www.linkedin.com/in/jo%C3%A3o-carlos-pereira-7450071b8/">João Carlos Pereira Geraldo</a></p>
+    </footer>
+</body>

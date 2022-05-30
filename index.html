@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Loja de tênis, chuteiras, roupas esportivas, aparelhos de academia, artigos esportivos e muito mais! Compre agora no JC Sports, loja com os menores preços para comprar online em até 12x, sem sair de casa.">
+    <link rel="stylesheet" href="styles/header-footer.css">
+    <link rel="stylesheet" href="styles/carrossel.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/media.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!--Script da página-->
+    <script src="script.js"></script>
+    <!--Script criado a partir do fonts awesome para inserir um icon dentro do input-->
+    <script src="https://kit.fontawesome.com/2330872482.js" crossorigin="anonymous"></script>
+    <title>JC Sports Loja de esportes - Nike, Adidas, Olympicus, Penalty e mais!</title>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" target="_self">JC SPORTS</a></h1>
+
+        <!--Input para o usuário digitar o que está pesquisando + um label com o icone que será inserido no input-->
+        <div class="container-input-search">
+            <label id="icon-search" for="input-search"><i class="fa-solid fa-magnifying-glass"></i></label>
+            <input id="input-search" type="text" placeholder="O que você está procurando?">
+        </div>
+        
+        <!--Container usado para levar a página de cadastro do usuário-->
+        <a id="inscrever-container" href="cadastro.html" target="_blank" rel="next">
+            <img src="images/logo-user.png" alt="Logo usuário" width="25px" height="25px">
+            <label>Criar conta</label>
+        </a>
+    </header>
+
+    <nav>
+        <!--Input para colocar o CEP, há uma label para adicionar um icon dentro do input-->
+        <div class="container-input-cep">
+            <label id="icon-cep" for="input-cep"><i class="fa-solid fa-location-dot"></i></label>
+            <input id="input-cep" name="CEP" placeholder="Informe seu CEP">
+        </div>
+
+        <!--Itens de Navegação-->
+        <ul>
+            <a href="#"><li>Categorias</li></a>
+            <a href="#ofertas" target="_self"><li>Ofertas</li></a>
+            <a href="#"><li>Masculino</li></a>
+            <a href="#"><li>Feminino</li></a>
+            <a href="#"><li>Contato</li></a>
+        </ul>
+        <a href="duvidas.html" target="_blank" rel="next">Tire suas dúvidas?</a>
+    </nav>
+
+    <main>
+        <article>
+            <!-- ------------------ CARROSSEL DE IMAGENS --------------------->
+            <section class="container-carrossel">
+                <div class="container-images-btn">
+                    <!--Radio button do carrossel-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <!--Slide images - imagens que irão passar pelo slide-->
+                    <div class="slide-image first">
+                        <img src="images/boxe-1280.jpeg" alt="Imagem Boxe" tittle="Imagem de boxeador">
+                    </div>
+                    <div class="slide-image">
+                        <img src="images/skate-1280.jpg" alt="Imagem Boxe" tittle="Imagem de skatista">
+                    </div>
+                    <div class="slide-image">
+                        <img src="images/basquete-1280.jpg" alt="Imagem Boxe" tittle="Imagem da bola de basquete">
+                    </div>
+                    <div class="slide-image">
+                        <img src="images/pista-1280.jpg" alt="Imagem Boxe" tittle="Imagem de uma pista de corrida">
+                    </div>
+                
+                </div>
+
+                <!--São labels que irão substituir os radio buttons-->
+                <div class="container-contorno-btn">
+                    <label for="radio1" class="contorno-btn"></label>
+                    <label for="radio2" class="contorno-btn"></label>
+                    <label for="radio3" class="contorno-btn"></label>
+                    <label for="radio4" class="contorno-btn"></label>
+                </div> 
+            </section>
+
+            <h2>OS MELHORES PREÇOS VOCÊ SÓ ENCONTRA AQUI!</h2>
+
+            <!-- ------------------ CATÁLOGO MAIS VISTOS --------------------->
+            <section class="container-catalogo">
+                <h3>MAIS VISTOS</h3>
+
+                <!-------Container-pai que abriga o container-filho, estes que são os produtos do catálogo------->
+                <div class="catalogo">
+
+                    <!--------Produto 1 - Imagem, descrição e botões------->
+                    <div class="catalogo-image">
+                        <img src="images/imagens-catalogo/tenis-nike-blue.jpg" alt="Foto de tênis" title="Tênis Blue Sports Nike">
+                        
+                        <!--Descrevem o que há nas imagens-->
+                        <label>Tênis Nike Blue sports Masculino</label>
+                        <label class="frete">Frete Grátis</label>
+                        <label class="preco">R$ 299,90</label>
+
+                        <!--Botões para adicionar ou retirar do carrinho-->
+                        <div class="add-compras">
+                            <input class="input-add" type="button" value="Adicionar ao carrinho" onclick="adicionar1(), calcular();">
+                            <label id="produto1">0</label>
+                            <input class="input-remove" type="button" value="Remover" onclick="subtrair1(), calcular();">
+                        </div>
+                    </div>
+
+                    <!--------Produto 2 - Imagem, descrição e botões------->
+                    <div class="catalogo-image">
+
+                        <img src="images/imagens-catalogo/tenis-nike-revolution.jpg" alt="Foto de tênis" title="Tênis Revolution 3 Fem">
+
+                        <!--Descrevem o que há nas imagens-->
+                        <label>Tênis Nike Revolution 3 Feminino</label>
+                        <label class="frete">Frete Grátis</label>
+                        <label class="preco">R$ 259,90</label>
+
+                        <!--Botões para adicionar ou retirar do carrinho-->
+                        <div class="add-compras">
+                            <input class="input-add" type="button" value="Adicionar ao carrinho" onclick="adicionar2(), calcular();">
+                            <label id="produto2">0</label>
+                            <input class="input-remove" type="button" value="Remover" onclick="subtrair2(), calcular();">
+                        </div>
+                    </div>
+
+                    <!--------Produto 3 - Imagem, descrição e botões------->
+                    <div class="catalogo-image">
+
+                        <img src="images/imagens-catalogo/chuteira-adidas.jpg" alt="Foto de tenis" title="Chuteira Nemeziz 19">
+                        
+                        <!--Descrevem o que há nas imagens-->
+                        <label>Chuteira Adidas Nemeziz 19</label>
+                        <label class="frete">Frete Grátis</label>
+                        <label class="preco">R$ 349,99</label>
+
+                        <!--Botões para adicionar ou retirar do carrinho-->
+                        <div class="add-compras">
+                            <input class="input-add" type="button" value="Adicionar ao carrinho" onclick="adicionar3(), calcular();">
+                            <label id="produto3">0</label>
+                            <input class="input-remove" type="button" value="Remover" onclick="subtrair3(), calcular();">
+                        </div>
+                    </div>
+
+                    <!--------Produto 4 - Imagem, descrição e botões------->
+                    <div class="catalogo-image">
+
+                        <img src="images/imagens-catalogo/tenis-adidas-dm.jpg" alt="Foto de tênis" tittle="Tênis DM Issue 2">
+
+                        <!--Descrevem o que há nas imagens-->
+                        <label>Tênis Adidas DM Issue 2 Branco</label>
+                        <label class="frete">Frete Grátis</label>
+                        <label class="preco">R$ 449,99</label>
+
+                        <!--Botões para adicionar ou retirar do carrinho-->
+                        <div class="add-compras">
+                            <input class="input-add" type="button" value="Adicionar ao carrinho" onclick="adicionar4(), calcular();">
+                            <label id="produto4">0</label>
+                            <input class="input-remove" type="button" value="Remover" onclick="subtrair4(), calcular();">
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            
+            <!-- ------------------ CATÁLOGO PROMOÇÕES --------------------->
+            <section class="container-catalogo">
+                <h3 id="ofertas">AS MAIORES OFERTAS</h3>
+                <div class="catalogo">
+
+                    <!--------Produto 5 - Imagem, descrição e botões------->
+                    <div class="catalogo-image">
+
+                        <img src="images/imagens-catalogo/bola-basquete.jpg" alt="Foto de Bola de Basquete" title="Bola de Basquete Wilson NBA">
+                        
+                        <!--Descrevem o que há nas imagens-->
+                        <label>Bola de Basquete Wilson NBA Authentic</label>
+                        <label class="frete">Frete Grátis</label>
+                        <label><del>R$ 219,90</del></label>
+                        <label class="preco">R$ 189,90</label>
+
+                        <!--Botões para adicionar ou retirar do carrinho-->
+                        <div class="add-compras">
+                            <input class="input-add" type="button" value="Adicionar ao carrinho" onclick="adicionar5(), calcular();">
+                            <label id="produto5">0</label>
+                            <input class="input-remove" type="button" value="Remover" onclick="subtrair5(), calcular();">
+                        </div>
+                    </div>
+
+                    <!--------Produto 6 - Imagem, descrição e botões------->
+                    <div class="catalogo-image">
+
+                        <img src="images/imagens-catalogo/raquete-de-tenis.jpg" alt="Foto de raquete de tênis" title="Raquete de Tênis">
+                        
+                        <!--Descrevem o que há nas imagens-->
+                        <label>Raquete de Tênis Babolat pure Team</label>
+                        <label class="frete">Frete Grátis</label>
+                        <label><del>R$ 1.399,90</del></label>
+                        <label class="preco">R$ 1.259,90</label>
+
+                        <!--Botões para adicionar ou retirar do carrinho-->
+                        <div class="add-compras">
+                            <input class="input-add" type="button" value="Adicionar ao carrinho" onclick="adicionar6(), calcular();">
+                            <label id="produto6">0</label>
+                            <input class="input-remove" type="button" value="Remover" onclick="subtrair6(), calcular();">
+                        </div>
+                    </div>
+
+                    <!--------Produto 7 - Imagem, descrição e botões------->
+                    <div class="catalogo-image">
+
+                        <img src="images/imagens-catalogo/bicicleta.jpg" alt="Foto de bicicleta" title="Bicicleta Ello Bike">
+                        
+                        <!--Descrevem o que há nas imagens-->
+                        <label>Bicicleta Aro 19 Ello Bike</label>
+                        <label class="frete">Frete Grátis</label>
+                        <label><del>R$ 869,99</del></label>
+                        <label class="preco">R$ 789,99</label>
+
+                        <!--Botões para adicionar ou retirar do carrinho-->
+                        <div class="add-compras">
+                            <input class="input-add" type="button" value="Adicionar ao carrinho" onclick="adicionar7(), calcular();">
+                            <label id="produto7">0</label>
+                            <input class="input-remove" type="button" value="Remover" onclick="subtrair7(), calcular();">
+                        </div>
+                    </div>
+
+                    <!--------Produto 8 - Imagem, descrição e botões------->
+                    <div class="catalogo-image">
+
+                        <img src="images/imagens-catalogo/corda-de-pular.jpg" alt="Foto de uma corda" tittle="Corda de Pular Everlast">
+                        
+                        <!--Descrevem o que há nas imagens-->
+                        <label>Corda de Pular Everlast Ajustável 2,5m - Preta</label>
+                        <label class="frete">Frete Grátis</label>
+                        <label><del>R$ 45,90</del></label>
+                        <label class="preco">R$ 39,90</label>
+
+                        <!--Botões para adicionar ou retirar do carrinho-->
+                        <div class="add-compras">
+                            <input class="input-add" type="button" value="Adicionar ao carrinho" onclick="adicionar8(), calcular();">
+                            <label id="produto8">0</label>
+                            <input class="input-remove" type="button" value="Remover" onclick="subtrair8(), calcular();">
+                        </div>
+                    </div>
+                </div>
+            </section><hr>
+            <!-- ---------------- ICON CARRINHO DE COMPRAS ------------------->
+            <aside>
+                <a href="#container-carrinho" target="_self" id="icon-carrinho">
+                    <img src="images/icon-carrinho.png" alt="ícone do carrinho" width="30px" height="30px">
+                </a>
+            </aside>
+
+            <!-- ------------------ CARRINHO DE COMPRAS --------------------->
+            <section id="container-carrinho">
+                <h3>BEM-VINDO AO SEU CARRINHO DE COMPRAS!</h3>
+                <label id="total">O valor total de sua compra foi de: R$ 0,00</label>
+                <button id="btn-confirmar" type="button">Confirmar e Comprar</button>
+            </section>
+
+        </article>
+    </main>
+
+    <footer>
+        <h3>ENTRE EM CONTATO:</h3>
+
+        <!--------- Container com meus contatos -------->
+        <div class="container-contato">
+
+            <!--Telefone-->
+            <div class="contato">
+                <label><strong>TELEFONE:</strong></label>
+                <img src="images/icones/icon-telefone.png" alt="icone-telefone">
+                <a href="#">(15)99162-1124</a>
+            </div>
+
+            <!--E-mail-->
+            <div class="contato">
+                <label><strong>E-MAIL:</strong></label>
+                <img src="images/icones/icon-envelope.png" alt="icone-envelope">
+                <a href="#">joao.tecmeca@gmail.com</a>
+            </div>
+
+            <!--Linkedin-->
+            <div class="contato">
+                <label><strong>LINKEDIN:</strong></label>
+                <img src="images/icones/icon-linkedin.png" alt="icone-linkedin">
+                <a href="https://www.linkedin.com/in/jo%C3%A3o-carlos-pereira-7450071b8/" target="_blank">Linkedin</a>
+            </div>
+
+            <!--Github-->
+            <div class="contato">
+                <label><strong>GITHUB:</strong></label>
+                <img src="images/icones/icon-github.png" alt="icone-github">
+                <a href="https://github.com/JoaoCarlosP" target="_blank">JoaoCarlosP</a>
+            </div>
+        </div>
+        <p id="mensagem">Site de compras desenvolvido por: <a href="https://www.linkedin.com/in/jo%C3%A3o-carlos-pereira-7450071b8/">João Carlos Pereira Geraldo</a></p>
+    </footer>
+</body>
+</html>

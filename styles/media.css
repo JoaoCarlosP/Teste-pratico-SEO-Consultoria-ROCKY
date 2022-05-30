@@ -1,0 +1,154 @@
+@media screen and (max-width: 1016px){   /*Ajustes para tela maior*/
+    section#container-acesso-rapido{
+        height: 700px;
+    }
+
+    section#container-acesso-rapido h2{
+        top: 40px;
+    }
+
+    .acesso-rapido{
+        margin-top: 90px
+    }
+
+    .container-tipo-acesso{
+        margin-bottom: 25px;
+    }
+
+    .slide-image img{
+        height: 345px;
+    }
+}
+
+@media screen and (max-width: 970px){   /*Ajustes para tela maior*/
+    nav li, nav a{
+        padding: 5px;
+    }
+    .slide-image img{
+        height: 320px;
+    }
+}
+
+@media screen and (max-width: 840px){   /*Ajustes para tela maior*/
+    header{
+        flex-wrap: wrap;
+    }
+    
+    header h1{
+        width: 100%;
+        text-align: center;
+        padding: 15px 0px 5px;
+    }
+    
+    #input-search{
+        width: 400px;
+        padding: 3px;
+    }
+
+    .container-input-cep{
+        display: none;
+    }
+
+    .slide-image img{
+        height: 280px;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .slide-image img{
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 671px){   /*Ajustes para tela maior*/
+    nav{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10px 0px;
+    }
+
+    
+    nav li, nav a{
+        display: block;
+        padding: 5px;
+    }
+
+    .slide-image img{
+        height: 220px;
+    }
+    
+}
+
+/*---------------- TABLET -------------*/
+
+@media screen and (max-width: 601px){
+    #input-search{
+        width: 300px;
+    }
+
+    article h2{
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    section.container-catalogo{
+        margin: 50px auto;
+    }
+
+    section.container-catalogo h3{
+        font-size: 18px;
+    }
+
+    .catalogo-image{
+        width: 180px;
+
+    }
+
+    .catalogo-image:not(:last-child){
+        margin-right: 40px;
+    }
+
+    section#container-acesso-rapido h2{
+        max-width: 450px;
+        font-size: 25px;
+    }
+
+    section#duvida-digitada h2{
+        font-size: 24px;
+    }
+
+    section#duvida-digitada input{
+        width: 400px;
+        font-size: 12px;
+    }
+
+    .slide-image img{
+        height: 200px;
+    }
+
+}
+
+@media screen and (max-width: 516px){
+
+    div.container-tipo-acesso{
+        width: 180px;
+        font-size: 14px;
+    }
+
+    div.container-icon{
+        width: 180px;
+        height: 100px;
+    }
+
+    div.container-itens{
+        height: 119px;
+        font-size: 11px;
+    }
+
+
+    .slide-image img{
+        height: 180px;
+    }
+}

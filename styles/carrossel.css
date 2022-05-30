@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+/*----------------------- CARROSEL DE IMAGENS -----------------------*/
+.container-carrossel{
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.container-images-btn{      /*Definindo a largura do container de imagens e btn*/
+    display: flex;
+    width: 400%;
+}
+
+
+.slide-image{               /*Definindo a largura de exibição pra Classe das imagens*/
+    width: 25%;
+    position: relative;
+    transition: 2000ms;
+}
+
+.slide-image img{          
+    width: 100%;
+}
+
+.container-images-btn input{    /*Escondendo os inputs-btn*/
+    display: none;
+}
+
+.container-contorno-btn{        /*Alinhando o container do contorno dos btn's*/
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.contorno-btn{                  /*Definindo o contorno*/
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    transition: 230ms;
+}
+
+.contorno-btn:not(:last-child){ /*Dando margin-right em todos, menos no último contorno*/
+    margin-right: 50px;
+}
+
+.contorno-btn:hover{
+    background-color: white;
+}
+
+#radio1:checked ~ .first{   /*Para radio+N como checked, muda ou não os slides de fotos*/
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+/*----------------------- FIM CARROSEL DE IMAGENS -----------------------*/

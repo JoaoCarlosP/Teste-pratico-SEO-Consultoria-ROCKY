@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*------------------ PARTE DE ACESSO RAPIDO ----------------*/
+
+/*Container pai onde é adicionado a foto de fundo*/
+section#container-acesso-rapido{
+    max-width: 1920px;
+    height: 510px;
+    background-image: url("../images/motocross-1920-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    text-align: center;
+    border-bottom: 3px solid rgb(32, 32, 32);
+}
+
+/*Ajustando o título h2 - com o position relative fica mais fácil*/
+section#container-acesso-rapido h2{
+    color: rgb(255, 255, 255);
+    font-family: 'sports';
+    font-size: 36px;
+    position: relative;
+    top: 100px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.329);
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.527);
+}
+
+/*Container com as opções de acesso rápido*/
+.acesso-rapido{
+    max-width: 1920px;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 140px;
+}
+
+/*Ajuste dos itens das opções contidas dentro do container acima de acesso rápido*/
+.container-tipo-acesso{
+    width: 200px;
+    height: 220px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid gray;
+    margin-right: 50px;
+}
+
+.container-tipo-acesso:hover{
+    box-shadow: 0px 0px 3px rgb(148, 148, 148);
+}
+
+/*Ajuste dos ícones de cada uma das opções*/
+.container-icon{
+    width: 200px;
+    height: 110px;
+    padding-top: 10px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.icon{
+    width: 50px;
+    height: 53px;
+    margin-bottom: 5px;
+}
+
+/*Ajuste dos itens de cada uma das opções*/
+.container-itens{
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+    height: 109px;
+    border-radius: 0px 0px 10px 10px;
+    border-bottom: 1px solid gray;
+}
+
+.container-itens > ul{
+    padding-top: 10px;
+    padding-left: 15px;
+    font-size: 12px;
+    text-align: left;
+    list-style: inside;
+}
+
+.container-itens > ul > li{
+    margin: 6px 0px;
+}
+
+/*--------------------- PARTE MAIN -------------------*/
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+/*----------Container com input-text de duvida + duvidas frequentes --------*/
+article#container-duvidas {
+    width: 650px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/*Centralização dos itens da parte do input-text da duvida*/
+section#duvida-digitada {
+    text-align: center;
+    padding: 20px;
+}
+
+/*Mudando e ajustando a fonte da duvida digitada*/
+section#duvida-digitada h2 {
+    font-size: 30px;
+    font-family: 'sports';
+    font-weight: bold;
+}
+
+/*Input com a dúvida digitada*/
+section#duvida-digitada input{
+    margin: 20px 0px;
+    width: 500px;
+    padding: 10px;
+    font-size: 14px;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    background-color: rgb(241, 241, 241);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.329);
+}
+
+/*------Container contendo as duvidas frequentes------*/
+section#duvidas-frequentes {
+    text-align: left;
+    padding: 30px
+}
+
+/*Ajustando a fonte*/
+section#duvidas-frequentes h3{
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-family: 'sports';
+}
+
+/*Dando um display block nos labels e os separando*/
+section#duvidas-frequentes label{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 10px 0px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(94, 94, 94, 0.582);
+    cursor: pointer;
+    transition: 150ms;
+}
+
+section#duvidas-frequentes label:hover{
+    color: rgb(29, 129, 129);
+    font-weight: bold;
+}

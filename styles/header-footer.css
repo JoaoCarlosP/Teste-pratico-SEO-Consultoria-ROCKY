@@ -1,0 +1,208 @@
+:root{
+    --cor0: rgb(34, 34, 34);
+    --cor1: rgb(45, 130, 130);
+}
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: var(--cor0);
+    color: white;
+    display: flex;
+    min-height: 60px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+/*Tamanho do texto da Logo*/
+header h1{
+    font-size: 24px;
+}
+
+header h1 a{
+    color: white;
+}
+
+/*Container da barra de pesq. principal*/
+.container-input-search{     
+    position: relative;
+}
+
+/*Formatação e alinhamento do ícone de search*/
+#icon-search{               
+    color: var(--cor1);
+    font-size: 20px;
+    position:absolute;
+    top: 25%;
+    right: 10px;
+    cursor: pointer;
+}
+
+/*Formatação do input de Search*/
+#input-search{               
+    outline: none;
+    width: 500px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 30px;
+    border: none;
+}
+
+/*Container do botão de criar conta ou cadastro*/
+#inscrever-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 145px;
+    height: 50px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/*Logo da parte de criar conta*/
+#inscrever-container img{
+    color: white;
+}
+
+/*Label da parte de criar conta*/
+#inscrever-container label{
+    font-size: 18px;
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+header a{
+    text-decoration: none;
+}
+
+#inscrever-container:hover{
+    background-color: rgba(92, 92, 92, 0.459);
+}
+
+/*----------- PARTE DE ITENS DE NAVEGAÇÃO ---------------*/
+
+/*Atribuindo um display flex e alinhando itens*/
+nav{
+    display: flex;
+    min-height: 50px;
+    padding: 0px 20px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor1);
+    text-decoration: none;
+}
+
+/*Container da parte de CEP*/
+.container-input-cep{       /*Container da barra de CEP*/
+    position: relative;
+}
+
+/*Inclui o icone de localização dentro do input que insere o cep*/
+#icon-cep{                 
+    font-size: 18px;
+    color: var(--cor0);
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+/*Formatação do input que insere o CEP*/
+#input-cep{                 
+    outline: none;
+    width: 160px;
+    height: 30px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 15px;
+    margin: 0;
+    color: white;
+    transition: 250ms;
+}
+
+nav a:hover{
+    background-color: rgb(60, 170, 170);
+
+}
+
+nav li{
+    display: inline-block;
+    list-style: none;
+    padding: 8px;
+}
+
+/*--------------------- RODAPÉ --------------------*/
+
+footer  {
+    text-align: center;
+    border-top: 1px solid rgba(56, 55, 55, 0.562);
+    background-color: rgb(236, 236, 236);
+}
+
+footer h3{
+    font-family: 'sports';
+    color: white;
+    padding: 10px;
+    font-size: 24px;
+    background-color:  rgb(34, 34, 34);
+}
+
+/*Ajustando o alinhamento e comprimento do container com os itens de contato*/
+.container-contato{
+    width: 100%;
+    min-height: 100px;
+    margin: 30px 0px;
+}
+
+/*Itens com os contatos - Ajuste de formatação*/
+div.contato{
+    width: 250px;
+    height: 80px;
+    display: inline-block;
+    padding-top: 10px;
+    margin: 15px 0px;
+    background-color: rgb(212, 209, 209);
+    border-radius: 5px;
+    margin-right: 40px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.329);
+}
+
+/*Label do contato*/
+.contato label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+/*ícones dos tipos contatos*/
+.contato img{
+    width: 20px;
+    margin-right: 5px;
+}
+
+.contato a{
+    color: rgb(56, 55, 55);
+    border-bottom: 1px solid rgb(56, 55, 55);
+    font-weight: 500;
+}
+
+/*----- Ajuste da mensagem final de rodapé----*/
+#mensagem{
+    color: rgba(20, 20, 20, 0.897);
+    padding: 5px;
+    background-color: rgba(23, 151, 151, 0.788);
+}
+
+#mensagem a{
+    color: rgba(20, 20, 20, 0.897);
+    font-weight: 550;
+}
